@@ -34,6 +34,12 @@ npm run dev
 
 Open `http://localhost:5173/`.
 
+# Deploy
+Just run
+```sh
+npm run release
+```
+
 # Examples
 The UI this exposes basically copies what the [Moondream Playground](https://moondream.ai/c/playground).
 
