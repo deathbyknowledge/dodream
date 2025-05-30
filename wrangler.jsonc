@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dodream",
+  "main": "src/worker.tsx",
+  "workers_dev": true,
+  "compatibility_date": "2025-03-05",
+  "upload_source_maps": true,
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "MOONDREAM", "class_name": "Moondream" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Moondream"] }],
+  "vars": {
+    "INFERENCE_URL": "<your-inference-url>" // e.g. https://api.moondream.ai/v1 or http://localhost:20200/v1
+  }
+}
