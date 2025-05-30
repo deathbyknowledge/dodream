@@ -17,6 +17,6 @@
   },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Moondream"] }],
   "vars": {
-    "INFERENCE_URL": "<your-inference-url>" // e.g. https://api.moondream.ai/v1 or http://localhost:20200/v1
+    // "INFERENCE_URL": "<your-inference-url>" // e.g. https://api.moondream.ai/v1 or http://localhost:20200/v1
   }
 }
